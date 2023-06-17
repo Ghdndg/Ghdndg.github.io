@@ -70,7 +70,6 @@ body {
 }
 
 .cart-items {    
-  max-height: 265px;
   overflow-y: auto;
 }
 
