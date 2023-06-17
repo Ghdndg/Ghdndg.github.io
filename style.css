@@ -72,6 +72,8 @@ body {
 }
 
 .cart-items {    
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .cart-total {
