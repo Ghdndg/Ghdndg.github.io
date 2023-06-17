@@ -175,7 +175,7 @@ window.addEventListener("DOMContentLoaded", () => {
 let button_buy = document.getElementById("button_buy");
 
 button_buy.addEventListener("click", () => {
-let price = document.getElementById("cart-total").value;
+let price = document.getElementById("cart-total").innerHTML;
 let name = document.querySelector(".header-item").innerHTML;
 
 data = {
