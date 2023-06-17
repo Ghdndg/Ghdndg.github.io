@@ -175,6 +175,15 @@ window.addEventListener("DOMContentLoaded", () => {
 let button_buy = document.getElementById("button_buy");
 
 button_buy.addEventListener("click", () => {
+  popup__buy.addEventListener("click", () => {
+let price = document.getElementById("cost").value;
+let name = document.querySelector(".header").innerHTML;
+
+data = {
+price: price,
+name: name
+}
+tg.sendData(JSON.stringify(data));
 tg.close();
 });
 
