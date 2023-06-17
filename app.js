@@ -138,7 +138,7 @@ function updateCart() {
   });
   const totalPrice = calculateTotal(cartItems);
   const cartTotal = document.getElementById("cart-total");
-  cartTotal.textContent = "Итого: " + totalPrice + "₽";
+  cartTotal.textContent = totalPrice;
 
   if (cartItems.length > 0) {
     document.getElementById("cart-container").style.display = "block";
