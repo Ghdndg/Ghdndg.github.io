@@ -172,5 +172,17 @@ items.forEach((item, index) => {
 window.addEventListener("DOMContentLoaded", () => {
   updateCartCounter();
 });
+let button_buy = document.getElementById("button_buy");
 
+popup__buy.addEventListener("click", () => {
+let price = document.getElementById("cost").value;
+let name = document.querySelector(".header-item").innerHTML;
+
+data = {
+price: price,
+name: name
+}
+tg.sendData(JSON.stringify(data));
+tg.close();
+});
 
