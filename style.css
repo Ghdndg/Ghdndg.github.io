@@ -73,6 +73,7 @@ body {
 
 .cart-items {    
   overflow-y: scroll;
+  max-height: 300px;
 }
 
 .cart-total {
