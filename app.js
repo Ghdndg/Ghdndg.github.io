@@ -174,7 +174,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 let button_buy = document.getElementById("button_buy");
 
-popup__buy.addEventListener("click", () => {
+button_buy.addEventListener("click", () => {
 let price = document.getElementById("cost").value;
 let name = document.querySelector(".header-item").innerHTML;
 
