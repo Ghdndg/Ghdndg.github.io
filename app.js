@@ -178,7 +178,7 @@ button_buy.addEventListener("click", () => {
 let price = document.getElementById("cart-total").innerHTML;
 
 data = {
-price-total: price
+priceAll: price
 }
 tg.sendData(JSON.stringify(data));
 tg.close();
