@@ -176,13 +176,10 @@ let button_buy = document.getElementById("button_buy");
 
 button_buy.addEventListener("click", () => {
 let price = document.getElementById("cart-total").innerHTML;
-let name = document.querySelector(".header-item").innerHTML;
 
 data = {
-price: price,
-name: name
+price-total: price
 }
 tg.sendData(JSON.stringify(data));
 tg.close();
 });
-
